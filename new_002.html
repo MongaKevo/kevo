@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form with semantics html</title>
+</head>
+<body>
+    <h1>form with semantics html</h1>
+    <form>
+        <section>
+        <label for="fullname">full name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+        </section>
+<br>        
+        <section>
+            <label for="email">email:</label>
+            <input type="email" id="email" name="email" required>
+        </section>
+<br>
+        <section>
+            <label for="pasword">password:</label>
+            <input type="password" id="password" name="password" required>
+        </section>
+<br>
+        <section>
+            <label for="gender">gender</label>
+            <select name="gender" id="gender">
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="other">other</option>
+            </select>
+        </section>
+<br>
+        <section>
+            <label>
+                <input type="radio" id="newsletter" name="newsletter">
+                subscribe to newsletter
+            </label>
+        </section>
+
+        <section>
+            <label for="comments">comments:</label>
+            <textarea name="comments" id="comments" rows="4"></textarea>
+        </section>
+<br>
+        <button type="submit" class="submit">Submit</button>
+        <style>
+            .submit{
+                background-color: rgb(4, 135, 250);
+                border-radius: 30px;
+                color: aliceblue;
+                font-size: 100px;
+                cursor: pointer;
+                padding-right: 10px;
+            }
+            .submit:hover{
+                background-color: blue;
+            }
+            .submit:active{
+                background-color: rgb(44, 124, 20);
+            }
+            html{
+                background-color: aqua;
+            }
+        </style>
+    </form>  
+</body>
+</html>
